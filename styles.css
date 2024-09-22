@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+
+.sidebar {
+  width: 250px;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 1px solid #333;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+
+.sidebar-header h2 {
+  color: #00cfff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.sidebar-menu {
+  list-style: none;
+}
+
+.sidebar-menu li a {
+  display: block;
+  padding: 12px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, padding 0.2s;
+  border-radius: 6px;
+}
+
+.sidebar-menu li a.active {
+  background-color: #00cfff;
+  color: #1f1f1f; 
+  padding-left: 30px;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #00cfff;
+  color: #1f1f1f;
+  padding-left: 30px; 
+}
+
+.main-content {
+  margin-left: 250px; 
+  padding: 20px;
+  background-color: #141414;
+  height: 100vh;
+  overflow-y: auto; 
+}
+
+.navbar {
+  background-color: #1f1f1f;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  position: fixed; 
+  top: 0;
+  left: 250px;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar h3 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-profile p {
+  color: #00cfff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dashboard {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border: 1px solid #333;
+}
+
+.card:hover {
+  background-color: #333;
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  color: #00cfff;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 26px;
+  color: #ffffff;
+  margin: 0;
+}
+
+button {
+  background-color: #00cfff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #009dd6;
+}
+
+.table-container {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+table th {
+  background-color: #1e1e1e;
+  color: white;
+  font-weight: bold;
+}
+
+table td {
+  background-color: #333;
+  color: #fff;
+}
+
+table tbody tr:hover {
+  background-color: #444;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: white;
+}
+
+.admin {
+  background-color: #00cfff;
+}
+
+.instructor {
+  background-color: #009688;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #00cfff;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  opacity: 0.9;
+}
