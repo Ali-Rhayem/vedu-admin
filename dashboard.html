@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="dashboard-page">
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Admin Panel</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#" data-page="dashboard" onclick="navigateTo('dashboard')">Dashboard</a></li>
+                <li><a href="#" data-page="users" onclick="navigateTo('users')">Users</a></li>
+                <li><a href="#" data-page="courses" onclick="navigateTo('courses')">Courses</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="navbar">
+                <h3>Dashboard</h3>
+                <div class="navbar-profile">
+                    <p>Admin</p>
+                </div>
+            </div>
+
+            <div class="dashboard">
+                <div class="card">
+                    <h4>Total Users</h4>
+                    <p id="total-users">0</p>
+                </div>
+                <div class="card">
+                    <h4>Total Instructors</h4>
+                    <p id="total-instructors">0</p>
+                </div>
+                <div class="card">
+                    <h4>Total Students</h4>
+                    <p id="total-students">0</p>
+                </div>
+                <div class="card">
+                    <h4>Total Classes</h4>
+                    <p id="total-classes">0</p>
+                </div>
+                <div class="card">
+                    <h4>Average Students per Class</h4>
+                    <p id="avg-students-per-class">0</p>
+                </div>
+                <div class="card">
+                    <h4>Average Instructors per Class</h4>
+                    <p id="avg-instructors-per-class">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./renderer.js"></script>
+</body>
+
+</html>
